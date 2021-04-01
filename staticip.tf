@@ -10,7 +10,7 @@ variable "octetIP" { default = "4" }
 
 # instance the provider
 provider "libvirt" {
-  uri = "qemu+ssh://139.5.19.210/system"
+  uri = "qemu+ssh://192.168.0.2/system"
 }
 
 # fetch the latest ubuntu release image from their mirrors
