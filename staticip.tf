@@ -57,7 +57,6 @@ resource "libvirt_domain" "domain-ubuntu" {
 
   disk {
        volume_id = libvirt_volume.os_image.id
-       size=104857600 
  }
   
   network_interface {
