@@ -17,7 +17,7 @@ provider "libvirt" {
 resource "libvirt_volume" "os_image" {
   name = "${var.hostname}-os_image"
   pool = "default"
-  source = "http://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-1503.qcow2"
+  source = "http://192.168.0.5/centos.qcow2"
   format = "qcow2"
 }
 
