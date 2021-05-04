@@ -2,7 +2,7 @@
 variable "hostname" { default = "testing" }
 variable "domain" { default = "openshift.local" }
 variable "ip_type" { default = "static" } # dhcp is other valid type
-variable "memoryMB" { default = 1024*1 }
+variable "memoryMB" { default = 1024*2 }
 variable "cpu" { default = 1 }
 variable "prefixIP" { default = "192.168.0" }
 variable "octetIP" { default = "4" }
