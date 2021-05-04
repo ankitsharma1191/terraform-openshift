@@ -1,5 +1,5 @@
 # variables that can be overriden
-variable "hostname" { default = "openshift" }
+variable "hostname" { default = "testing" }
 variable "domain" { default = "openshift.local" }
 variable "ip_type" { default = "static" } # dhcp is other valid type
 variable "memoryMB" { default = 1024*1 }
