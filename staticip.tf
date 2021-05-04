@@ -2,7 +2,7 @@
 variable "hostname" { default = "openshift" }
 variable "domain" { default = "openshift.local" }
 variable "ip_type" { default = "static" } # dhcp is other valid type
-variable "memoryMB" { default = 1024*6 }
+variable "memoryMB" { default = 1024*1 }
 variable "cpu" { default = 1 }
 variable "prefixIP" { default = "192.168.0" }
 variable "octetIP" { default = "4" }
@@ -17,7 +17,7 @@ provider "libvirt" {
 resource "libvirt_volume" "os_image" {
   name = "${var.hostname}-os_image"
   pool = "default"
-  source = "http://192.168.0.5/centos.qcow2"
+  source = "http://192.168.0.216/var/lib/libvirt/images/jenkins.qcow2"
   format = "qcow2"
 }
 
